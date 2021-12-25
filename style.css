@@ -1,0 +1,192 @@
+html {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body {
+    color: white;
+    background-color: #1f2225;
+}
+
+a {
+    text-decoration: none;
+}
+
+#menu {
+    background: #0099CC;
+    background: linear-gradient(to bottom,  #0099CC,  #1f2225);
+    color: #FFF;
+    height: 45px;
+    padding-left: 18px;
+    border-radius: 10px;
+}
+#menu ul, #menu li {
+    margin: 0 auto;
+    padding: 0;
+    list-style: none
+}
+#menu ul {
+    width: 100%;
+}
+#menu li {
+    float: left;
+    display: inline;
+    position: relative;
+}
+#menu a {
+    display: block;
+    line-height: 45px;
+    padding: 0 14px;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 16px;
+}
+#menu a.dropdown-arrow:after {
+    content: "\25BE";
+    margin-left: 5px;
+}
+#menu li a:hover {
+    color: #0099CC;
+    background: #F2F2F2;
+}
+#menu input {
+    display: none;
+    margin: 0;
+    padding: 0;
+    height: 45px;
+    width: 100%;
+    opacity: 0;
+    cursor: pointer
+}
+#menu label {
+    display: none;
+    line-height: 45px;
+    text-align: center;
+    position: absolute;
+    left: 35px
+}
+#menu label:before {
+    font-size: 1.6em;
+    content: "\2261"; 
+    margin-left: 20px;
+}
+#menu ul.sub-menus{
+    height: auto;
+    overflow: hidden;
+    width: 170px;
+    background: #444444;
+    position: absolute;
+    z-index: 99;
+    display: none;
+}
+#menu ul.sub-menus li {
+    display: block;
+    width: 100%;
+}
+#menu ul.sub-menus a {
+    color: #FFFFFF;
+    font-size: 16px;
+}
+#menu li:hover ul.sub-menus {
+    display: block
+}
+#menu ul.sub-menus a:hover{
+    background: #F2F2F2;
+    color: #444444;
+}
+@media screen and (max-width: 800px){
+    #menu {position:relative}
+    #menu ul {background:#111;position:absolute;top:100%;right:0;left:0;z-index:3;height:auto;display:none}
+    #menu ul.sub-menus {width:100%;position:static;}
+    #menu ul.sub-menus a {padding-left:30px;}
+    #menu li {display:block;float:none;width:auto;}
+    #menu input, #menu label {position:absolute;top:0;left:0;display:block}
+    #menu input {z-index:4}
+    #menu input:checked + label {color:white}
+    #menu input:checked + label:before {content:"\00d7"}
+    #menu input:checked ~ ul {display:block}
+}
+
+.interna {
+  align-items: center;
+  justify-content: center;
+  text-align:  center;
+}
+
+div.confia {
+    margin: auto;
+    width: 60%;
+}
+
+img.sobre {
+    width: 20vw;
+    height: 20vw;
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.emb {
+    width: 50%;
+    height: 10%;
+}
+
+img.icone {
+    filter: saturate(0%);
+}
+
+img.icone:hover {
+    filter: saturate(100%);
+}
+
+#git {
+  filter: invert(20%);
+}
+
+#git:hover {
+  filter: invert(0%);
+}
+
+img.bot {
+    padding-top: 10%;
+}
+
+img.des {
+    width: 20%;
+    height: 20%;
+}
+
+@media only screen and (max-width: 730px) {
+
+    img.icone {
+        width: 7vw;
+        height: 7vw;
+    }
+}
+
+@media only screen and (min-width: 730px) {
+
+    img.icone {
+        width: 5vw;
+        height: 5vw;
+    }
+}
+
+.myButton {
+    background-color:#ffffff;
+    border-radius:28px;
+    display:inline-block;
+    cursor:pointer;
+    color:#7288da;
+    font-family:Arial;
+    font-size:17px;
+    padding:16px 31px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #000000;
+}
+.myButton:hover {
+    background-color:#1f2225;
+}
+.myButton:active {
+    position:relative;
+    top:1px;
+}
