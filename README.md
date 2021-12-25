@@ -1,2 +1,2 @@
 # Confia-Web
-<img src="confia.png">
+<img src="imgs/confia.png">
